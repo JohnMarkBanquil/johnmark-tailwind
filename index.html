@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <title>My Portfolio</title>
+</head>
+
+<body class="min-h-screen bg-neutral-950 text-center text-orange-100 transition-colors duration-500">
+    <h1 class="text-[75px] text-orange-500">JohnMarkBanquil</h1>
+    <h1 class="text-orange-500">Hello World</h1>
+    
+
+    <button id="switch" class="rounded-[10px] border-0 bg-orange-500 px-6 py-3 text-neutral-950 transition-colors duration-500 hover:bg-orange-400">Switch</button>
+
+    <header>
+
+        <nav class="mx-[50px] flex items-center justify-between max-[600px]:flex-col max-[600px]:gap-[15px]">
+            <span class="text-orange-400 max-[600px]:text-[75px]">@JohnMarkBanquil</span>
+            <ul class="m-0 flex list-none gap-5 p-0 max-[600px]:flex-col max-[600px]:text-center">
+                <li><a class="transition-colors duration-500 hover:text-orange-400" href="#projects">Projects</a></li>
+                <li><a class="transition-colors duration-500 hover:text-orange-400" href="#services">Services</a></li>
+                <li><a class="transition-colors duration-500 hover:text-orange-400" href="#contact">Contact Me</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="m-[50px] flex flex-wrap gap-[30px] p-[50px] max-[600px]:m-[10px] max-[600px]:gap-5 max-[600px]:p-[15px]">
+        <section id="projects" class="min-w-[280px] flex-1 border-2 border-orange-500 bg-neutral-900 p-5 text-orange-100 max-[600px]:min-w-full max-[600px]:p-[15px]">
+            <h2 class="text-orange-400">My Projects</h2>
+            <p>Personal portfolio, payroll system, company website, startup website, and compliance monitoring system.
+            </p>
+        </section>
+
+        <section id="services" class="min-w-[280px] flex-1 border-2 border-orange-500 bg-neutral-900 p-5 text-orange-100 max-[600px]:min-w-full max-[600px]:p-[15px]">
+            <h2 class="text-orange-400">My Services</h2>
+            <p>Website Creation, System Creation, AI Automation, Database Management, Project Management, Systems
+                Analyst</p>
+        </section>
+
+        <section id="contact" class="min-w-[280px] flex-1 border-2 border-orange-500 bg-neutral-900 p-5 text-orange-100 max-[600px]:min-w-full max-[600px]:p-[15px]">
+            <h2 class="text-orange-400">Let's build together!</h2>
+            <form class="flex flex-col gap-5" action="#">
+                <!-- Name -->
+                <label class="text-orange-200" for="name">Name</label>
+                <input class="rounded border border-orange-700 bg-neutral-950 px-3 py-2 text-orange-100 focus:border-orange-400 focus:outline-none focus:ring-2 focus:ring-orange-500/40" type="text" id="name" name="name" required>
+
+                <!-- Email -->
+                <label class="text-orange-200" for="email">Email</label>
+                <input class="rounded border border-orange-700 bg-neutral-950 px-3 py-2 text-orange-100 focus:border-orange-400 focus:outline-none focus:ring-2 focus:ring-orange-500/40" type="email" name="email" id="email" required>
+
+                <!-- Message -->
+                <label class="text-orange-200" for="message">Message</label>
+                <textarea class="rounded border border-orange-700 bg-neutral-950 px-3 py-2 text-orange-100 focus:border-orange-400 focus:outline-none focus:ring-2 focus:ring-orange-500/40" name="message" id="message" rows="5" required></textarea>
+
+                <!-- Submit -->
+                <button class="rounded-[10px] border-0 bg-orange-500 px-6 py-3 text-neutral-950 transition-colors duration-500 hover:bg-orange-400" type="submit">Send Message</button>
+            </form>
+        </section>
+    </main>
+    <script src="script.js"></script>
+
+</body>
+
+
+</html>
